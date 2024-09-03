@@ -19,9 +19,9 @@ export class Database{
     }
 
     #persist(){
-        const dados = JSON.stringify(this.#database)
+      //  const dados = JSON.stringify(this.#database)
         fs.writeFile(databasePach, JSON.stringify(this.#database))
-        console.log(dados)
+      //  console.log(dados)
     }
 
 
@@ -38,7 +38,7 @@ export class Database{
         }else{
             this.#database[table] = [data]
         }
-        console.log("insert exe")
+       // console.log("insert exe")
         this.#persist();
 
         return data;

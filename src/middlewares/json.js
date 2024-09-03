@@ -10,6 +10,6 @@ try{
 }catch{
     req.body = null
 }
-    res.setHeader('Content-type', 'application/json')
 
+ res.setHeader('Content-type', 'application/json')
 }
